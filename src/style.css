@@ -1,20 +1,45 @@
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
-  border-bottom: 2px solid #21bf96 !important;
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected::after {
+    border-bottom: 2px solid rgb(15, 26, 173) !important;
 }
 
-.ant-menu-horizontal > .ant-menu-item-selected a,
-.ant-menu-horizontal > .ant-menu-item a:hover {
-  color: #21bf96 !important;
+.ant-menu-horizontal>.ant-menu-item-selected a,
+.ant-menu-horizontal>.ant-menu-item a:hover {
+    color: rgb(15, 26, 173) !important;
 }
 
 .ant-modal-content {
-  overflow: auto;
-  border-radius: 1rem;
+    overflow: auto;
+    border-radius: 1rem;
+}
+
+
+/* Sytling added for the frontend application */
+
+
+/* Page fontface setting */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Reset page styling */
+
+* {
+    font-family: 'Lato', 'Maven Pro', 'Palanquin', sans-serif;
+    font-size: medium;
+    color: rgb(15, 26, 173);
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+a:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(15, 26, 173) !important;
 }
