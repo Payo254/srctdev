@@ -18,6 +18,8 @@ import { Layout, Tabs } from "antd";
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
+import "./assets/css/styles.css";
+import "./assets/css/Navigation-with-Button.css";
 import Contract from "components/Contract/Contract";
 // import Text from "antd/lib/typography/Text";
 // import Ramper from "components/Ramper";
