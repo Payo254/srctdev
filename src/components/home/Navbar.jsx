@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -60,14 +61,14 @@ const Navbar = () => {
       <div className="flex relative">
         {!toggleMenu && (
           <HiMenuAlt4
-            fontSize={28}
+            fontSize={16}
             className="text-white md:hidden cursor-pointer"
             onClick={() => setToggleMenu(true)}
           />
         )}
         {toggleMenu && (
           <AiOutlineClose
-            fontSize={28}
+            fontSize={16}
             className="text-white md:hidden cursor-pointer"
             onClick={() => setToggleMenu(false)}
           />

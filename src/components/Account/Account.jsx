@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useMoralis } from "react-moralis";
 import { getEllipsisTxt } from "helpers/formatters";
 import Blockie from "../Blockie";
@@ -45,15 +46,25 @@ const styles = {
 };
 
 function Account() {
-  const { authenticate, isAuthenticated, account, chainId, logout } =
-    useMoralis();
+  const {
+    authenticate,
+    isAuthenticated,
+    account,
+    chainId,
+    logout,
+  } = useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
 
   if (!isAuthenticated || !account) {
     return (
       <>
-        <div onClick={() => setIsAuthModalVisible(true)}>
+        <span className="navbar-text actions"  onClick={() => setIsAuthModalVisible(true)}>
+            <button className="btn btn-light action-button" role="button" type="button">
+              Connect
+            </button>
+          </span>
+        {/* <div onClick={() => setIsAuthModalVisible(true)}>
           <button
             type="button"
             // onClick={connectWallet}
@@ -61,7 +72,7 @@ function Account() {
           >
             <p className="text-white text-base font-semibold">Connect</p>
           </button>
-        </div>
+        </div> */}
         <Modal
           visible={isAuthModalVisible}
           footer={null}

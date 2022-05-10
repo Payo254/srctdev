@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { MoralisProvider } from "react-moralis";
 import "./index.css";
+import "./assets/css/styles.css";
+import "./assets/css/Navigation-with-Button.css";
+import "./assets/js/bs-animation.js";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 /** Get your free Moralis Account https://moralis.io/ */
@@ -24,8 +27,12 @@ const Application = () => {
     );
   else {
     return (
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1>Website is Down. Yoooh Come Back Later</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}>
+        <h1> Website is Down.Yoooh Come Back Later </h1>{" "}
       </div>
     );
   }

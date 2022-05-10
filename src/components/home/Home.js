@@ -4,22 +4,22 @@ import bg2 from "../../images/bg2.jpg";
 
 const Home = () => (
   <div className="min-h-screen">
-    <div className="gradient-bg-welcome">
-      <Navbar />
-      <div className="md:flex-[0.5] flex-initial justify-center items-center">
+    <div className="">
+      <div className="">
         <img
           className="img-fluid"
           src={bgone}
           alt="Satochi Real Coin"
           width="100%"
-          height="auto"
           data-aos="fade"
-          data-aos-duration="1500"
-          data-aos-delay="200"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+          // style={{ maxHeight: "30rem" }}
         />
         {/* <img src={bgone} alt="logo" className="w-full object-cover" /> */}
       </div>
       <Welcome />
+      <Navbar />
     </div>
     <Services />
     <div className="md:flex-[0.5] flex-initial justify-center items-center">
