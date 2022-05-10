@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useState } from "react";
 import { useTokenPrice } from "react-moralis";
 
@@ -27,7 +28,8 @@ function TokenPrice(props) {
       <img
         src={props.image || noLogoToken}
         alt="logo"
-        style={{ height: props?.size || "24px", width: "36px" }}
+        style={{ height: props?.size || "24px", width: "auto" }}
+        className="img img-fluid"
       />
       <span
         style={{ cursor: "pointer" }}
