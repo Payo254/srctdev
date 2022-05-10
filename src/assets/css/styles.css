@@ -39,6 +39,9 @@
 a:hover {
   color: inherit;
 }
+i:hover, i:focus, i:focus-within{
+  color: inherit;
+}
 /* Sytling added for the frontend application */
 
 /* Navbar start */
