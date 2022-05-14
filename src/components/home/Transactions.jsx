@@ -33,7 +33,7 @@ function Transactions() {
 
     return (
       <div
-        className=" m-4 flex flex-1
+        className=" m-3 flex flex-1
       2xl:min-w-[450px]
       2xl:max-w-[500px]
       sm:min-w-[270px]
@@ -104,7 +104,7 @@ function Transactions() {
     return (
       <>
         <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
-          <div className="flex flex-col md:p-12 py-12 px-4">
+          <div className="flex flex-col md:p-12 py-12 px-3">
             <h3 className="text-gradient text-3xl text-center my-2">
               Explore the Network
             </h3>
