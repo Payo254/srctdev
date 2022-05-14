@@ -44,7 +44,7 @@ function MenuItems() {
               <a href="/onramp">💵 Fiat</a>
             </li> */}
             <li className="nav-item" role="presentation">
-              <a href="/erc20balance"><i className="fa-solid fa-file-invoice-dollar"></i> Balances</a> {/* 💰 */}
+              <i className="fa-solid fa-file-invoice-dollar"></i><a href="/erc20balance"> Balances</a> {/* 💰 */}
             </li>
             <li className="nav-item" role="presentation">
               <a href="/erc20transfers"><i className="fa-solid fa-wallet"></i> Transfers</a>{/* 💸 */}

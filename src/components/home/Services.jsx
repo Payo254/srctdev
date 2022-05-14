@@ -4,29 +4,30 @@ import { BiSearchAlt } from "react-icons/bi";
 import { RiHeart2Fill } from "react-icons/ri";
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
-  <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
-    <div
-      className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}
-    >
+  <div className="justify-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
+    <div className={`rounded-full flex justify-center items-center ${color}`}>
       {icon}
+      &nbsp;
+      <h3 className="outline-offset-0 text-lg items-end text-white">{title}</h3>
     </div>
-    <div className="ml-5 flex flex-col flex-1">
-      <h3 className="mt-2 text-gradient text-lg">{title}</h3>
-      <p className="mt-1 text-[#3a0c0c] text-sm md:w-9/12">{subtitle}</p>
+    <div className="flex flex-col flex-1">
+      <p className="mt-1 text-[#000] text-sm text-justify md:w-12/12">
+        {subtitle}
+      </p>
     </div>
   </div>
 );
 
 const Services = () => (
-  <div className="flex w-full justify-center items-center gradient-bg-services">
-    <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
-      <div className="flex-1 flex flex-col justify-start items-start">
-        <h1 className=" text-3xl sm:text-5xl py-2 text-gradient ">
+  <div className="">
+    <div className="">
+      <div className="">
+        <h1 className=" text-3xl sm:text-5xl py-2 text-center text-[#0f1aad]">
           Satoshi Real
           <br />
           Coin & Ecosystem
         </h1>
-        <p className="text-left my-2 text-[#3a0c0c] font-light md:w-9/12 w-11/12 text-base">
+        <p className="font-light text-[#000] m-10 text-justify">
           SAR token has by itself real estate projects as a backup real asset.
           Unlike meme coins that have no actual projects, SRC targets to achieve
           a consensus real estate ownership mechanism to its community by
@@ -38,28 +39,33 @@ const Services = () => (
         </p>
       </div>
 
-      <div className="flex-1 flex flex-col justify-start items-center">
+      <div className="inline-flex flex-row justify-start items-center">
         <ServiceCard
           color="bg-[#2952E3]"
           title="Satoshi Team"
-          icon={<BsShieldFillCheck fontSize={21} className=" text-gradient" />}
+          icon={
+            <BsShieldFillCheck
+              fontSize={21}
+              className="text-white"
+              fill={"white"}
+            />
+          }
           subtitle="The SRC team has a strong track record in hedge fund management, development of marketplaces, trading terminals and has developed companies such as Dollar Code corporation and microfinances that offer lending services to millions of people across the world."
         />
         <ServiceCard
           color="bg-[#8945F8]"
           title="Liquidity "
           icon={
-            <BiSearchAlt
-              fontSize={21}
-              className="text-[#3a0c0c] text-gradient"
-            />
+            <BiSearchAlt fontSize={21} className="text-white" fill={"white"} />
           }
           subtitle="SRC is the main currency for trading asset tokens as it is used for market making and liquidity enhancement by the SAR liquidity fund. Thus, the demand for SAR correlates with trading volume on the SATOSHI REAL COIN platform."
         />
         <ServiceCard
           color="bg-[#F84550]"
           title="Satoshi Vision"
-          icon={<RiHeart2Fill fontSize={21} className="text-[#3a0c0c]" />}
+          icon={
+            <RiHeart2Fill fontSize={21} className="text-white" fill={"white"} />
+          }
           subtitle="Total value of asset cryptocurrencies could reach $10 trillion by 2030 with global trading volume exceeding $90 trillion. The value of asset cryptocurrencies traded on the SATOSHI REAL COIN network platform could reach $2 trillion by 2030 with trading volume exceeding $20 trillion"
         />
       </div>

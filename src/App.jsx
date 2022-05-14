@@ -23,7 +23,6 @@ const { Header } = Layout;
 
 const styles = {
   content: {
-    display: "flex",
     justifyContent: "center",
     fontFamily: "Lato, sans-serif",
     color: "#041836",

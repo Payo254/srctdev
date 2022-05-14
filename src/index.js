@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
@@ -31,7 +32,8 @@ const Application = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-        }}>
+        }}
+      >
         <h1> Website is Down.Yoooh Come Back Later </h1>{" "}
       </div>
     );

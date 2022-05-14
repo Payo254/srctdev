@@ -2,7 +2,7 @@
 import React from "react";
 import { BsInfoCircle } from "react-icons/bs";
 import logo from "../../images/logo.png";
-import real from "../../images/real.jpg";
+// import real from "../../images/real.jpg";
 import Address from "./Address";
 const companyCommonStyles =
   "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -113,7 +113,7 @@ const Welcome = () => {
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
           <div
             style={{
-              backgroundImage: `url(${real})`,
+              // backgroundImage: `url(${real})`,
               fontSize: "50px",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

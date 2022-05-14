@@ -39,7 +39,9 @@
 a:hover {
   color: inherit;
 }
-i:hover, i:focus, i:focus-within{
+i:hover,
+i:focus,
+i:focus-within {
   color: inherit;
 }
 /* Sytling added for the frontend application */
@@ -194,8 +196,9 @@ i:hover, i:focus, i:focus-within{
   background-color: rgb(15, 26, 173) !important;
 } */
 
-.nav-item:hover,
-.nav-item:focus {
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(15, 26, 173) !important;
+.nav-item:focus,
+.nav-item:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(15, 26, 173);
+  cursor: pointer;
 }

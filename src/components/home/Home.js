@@ -19,11 +19,19 @@ const Home = () => (
         {/* <img src={bgone} alt="logo" className="w-full object-cover" /> */}
       </div>
       <Welcome />
-      <Navbar />
     </div>
     <Services />
+    <Navbar />
     <div className="md:flex-[0.5] flex-initial justify-center items-center">
-      <img src={bg2} alt="logo" className="w-full object-cover" />
+      <img
+        src={bg2}
+        alt="logo"
+        className="img-fluid"
+        data-aos="fade"
+        width="100%"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+      />
     </div>
     <Transactions />
     <Footer />
